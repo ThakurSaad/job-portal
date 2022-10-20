@@ -10,4 +10,8 @@ app.get("/", (req, res) => {
   res.send("Route is high");
 });
 
+app.get("*", (req, res) => {
+  res.send("You are lost");
+});
+
 module.exports = app;
