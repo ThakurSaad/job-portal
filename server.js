@@ -6,7 +6,7 @@ const app = require("./app");
 
 // const mongodbURI = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@cluster0.v79k8ce.mongodb.net/job-portal?retryWrites=true&w=majority`;
 
-mongoose.connect(process.env.DATABASE_LOCAL).then(() => {
+mongoose.connect("mongodb://0.0.0.0:27017/job-portal").then(() => {
   console.log(`Database is connected to a core Blink`.blue);
 });
 
