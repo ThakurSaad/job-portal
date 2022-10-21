@@ -22,6 +22,10 @@ const { getJobsService } = require("../services/candidate.services");
 
 exports.getJobs = async (req, res) => {
   try {
+    let filters = { ...req.query };
+
+    console.log(filters);
+
     const jobs = await getJobsService();
 
     res.status(200).json({
