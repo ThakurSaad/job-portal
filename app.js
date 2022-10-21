@@ -7,9 +7,9 @@ app.use(express.json());
 app.use(cors());
 
 //routes
-const jobRoute = require("./routes/job.route");
+const candidateRoute = require("./routes/candidate.route");
 
-app.use("/api/v1/job", jobRoute);
+app.use("/api/v1/candidate/jobs", candidateRoute);
 
 app.get("/", (req, res) => {
   res.send("Route is high");
