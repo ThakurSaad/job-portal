@@ -68,7 +68,7 @@ const jobSchema = mongoose.Schema(
     },
 
     salary: {
-      type: Number,
+      type: String,
       required: [true, "Please provide salary"],
     },
 

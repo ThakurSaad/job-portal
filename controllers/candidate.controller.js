@@ -24,9 +24,25 @@ exports.getJobs = async (req, res) => {
   try {
     let filters = { ...req.query };
 
-    console.log(filters);
+    const excludeFields = ["sort", "page", "limit"];
 
-    const jobs = await getJobsService();
+    excludeFields.forEach((field) => delete filters[field]);
+
+    let filterString = JSON.stringify(filters);
+    filterString = filterString.replace(
+      /\b(gt|gte|lt|lte|eq)\b/g,
+      (match) => `$${match}`
+    );
+    filters = JSON.parse(filterString);
+
+    const queries = {};
+
+    if (req.query.sort) {
+      const sortBy = req.query.sort.split(",").join(" ");
+      queries.sortBy = sortBy;
+    }
+
+    const jobs = await getJobsService(filters, queries);
 
     res.status(200).json({
       status: "Success",

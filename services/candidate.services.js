@@ -4,8 +4,8 @@ const Job = require("../models/Job");
 //   return await Job.create(data);
 // };
 
-exports.getJobsService = async () => {
-  const jobs = await Job.find({}).select("-candidates");
-  const total = await Job.countDocuments();
+exports.getJobsService = async (filters, queries) => {
+  const jobs = await Job.find(filters).sort(queries.sortBy);
+  const total = await Job.countDocuments(filters);
   return { total, jobs };
 };
