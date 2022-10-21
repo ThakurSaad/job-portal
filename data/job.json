@@ -10,7 +10,14 @@
     "skills": "Node, Mongo, Express, React",
     "startDate": "Immediately",
     "salary": "50000",
-    "unit": "USD"
+    "unit": "USD",
+    "deadline": "",
+    "candidates": [],
+    "hiringManager": {
+      "id": "",
+      "name": ""
+    },
+    "dummy": ""
   },
   {
     "title": "Software Developer-2",
