@@ -1,6 +1,7 @@
 const {
   getJobsService,
   getJobByIdService,
+  applyJobService,
 } = require("../services/candidate.services");
 
 // exports.createJob = async (req, res) => {
@@ -68,7 +69,7 @@ exports.getJobById = async (req, res) => {
     const { id } = req.params;
 
     const job = await getJobByIdService(id);
-    console.log(job);
+
     res.status(200).json({
       status: "Success",
       message: "Job found",
@@ -80,6 +81,26 @@ exports.getJobById = async (req, res) => {
     res.status(400).json({
       status: "Fail",
       message: "Job not found",
+      error: error.message,
+    });
+  }
+};
+
+exports.applyJob = async (req, res) => {
+  try {
+    const job = await applyJobService(req.body);
+
+    res.status(200).json({
+      status: "Success",
+      message: "Application successful",
+      data: job,
+    });
+  } catch (error) {
+    console.log("error");
+
+    res.status(400).json({
+      status: "Fail",
+      message: "Application not sent",
       error: error.message,
     });
   }

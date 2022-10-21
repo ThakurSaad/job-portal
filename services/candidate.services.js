@@ -1,3 +1,4 @@
+const Application = require("../models/Application");
 const Job = require("../models/Job");
 
 // exports.createJobService = async (data) => {
@@ -12,4 +13,8 @@ exports.getJobsService = async (filters, queries) => {
 
 exports.getJobByIdService = async (jobId) => {
   return await Job.findOne({ _id: jobId });
+};
+
+exports.applyJobService = async (data) => {
+  return await Application.create(data);
 };

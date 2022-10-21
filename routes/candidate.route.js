@@ -6,4 +6,6 @@ router.get("/", candidateController.getJobs);
 
 router.get("/:id", candidateController.getJobById);
 
+router.post("/:id/apply", candidateController.applyJob);
+
 module.exports = router;
