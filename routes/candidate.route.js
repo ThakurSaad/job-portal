@@ -4,4 +4,6 @@ const candidateController = require("../controllers/candidate.controller");
 
 router.get("/", candidateController.getJobs);
 
+// router.get("/", candidateController.getJobsById)
+
 module.exports = router;
