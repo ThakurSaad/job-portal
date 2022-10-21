@@ -4,10 +4,10 @@ const colors = require("colors");
 
 const app = require("./app");
 
-// const mongodbURI = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@cluster0.v79k8ce.mongodb.net/job-portal?retryWrites=true&w=majority`;
+const mongodbURI = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@cluster0.v79k8ce.mongodb.net/job-portal?retryWrites=true&w=majority`;
 // process.env.DATABASE_LOCAL
 
-mongoose.connect(process.env.DATABASE_LOCAL).then(() => {
+mongoose.connect(mongodbURI).then(() => {
   console.log(`Database is connected to a core Blink`.blue);
 });
 
