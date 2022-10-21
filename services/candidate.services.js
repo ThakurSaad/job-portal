@@ -9,3 +9,7 @@ exports.getJobsService = async (filters, queries) => {
   const total = await Job.countDocuments(filters);
   return { total, jobs };
 };
+
+exports.getJobByIdService = async (jobId) => {
+  return await Job.findOne({ _id: jobId });
+};
