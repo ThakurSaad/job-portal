@@ -2,73 +2,81 @@
   {
     "title": "Software Developer-1",
     "companyName": "Google",
-    "companyDesc": "",
+    "companyDesc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry",
     "jobType": "Remote",
     "jobDesc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-    "jobField": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+    "jobField": "engineering",
     "jobLocation": "Toronto",
     "skills": "Node, Mongo, Express, React",
     "startDate": "Immediately",
     "salary": "50000",
     "unit": "USD",
-    "deadline": "",
+    "deadline": "10 Nov 22",
+    "vacancy": 3,
     "candidates": [],
     "hiringManager": {
       "id": "",
-      "name": ""
-    },
-    "dummy": ""
+      "name": "Lalisa Manoban"
+    }
   },
   {
     "title": "Software Developer-2",
     "companyName": "Google",
-    "companyDesc": "",
+    "companyDesc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry",
     "jobType": "Remote",
     "jobDesc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-    "jobField": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+    "jobField": "engineering",
     "jobLocation": "Toronto",
     "skills": "Node, Mongo, Express, React",
     "startDate": "Immediately",
     "salary": "50000",
-    "unit": "USD"
+    "unit": "USD",
+    "deadline": "10 Nov 22",
+    "vacancy": 3,
+    "candidates": [],
+    "hiringManager": {
+      "id": "",
+      "name": "Jenny Ruby Jane"
+    }
   },
   {
     "title": "Software Developer-3",
     "companyName": "Google",
-    "companyDesc": "",
+    "companyDesc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry",
     "jobType": "Remote",
     "jobDesc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-    "jobField": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+    "jobField": "engineering",
     "jobLocation": "Toronto",
     "skills": "Node, Mongo, Express, React",
     "startDate": "Immediately",
     "salary": "50000",
-    "unit": "USD"
+    "unit": "USD",
+    "deadline": "10 Nov 22",
+    "vacancy": 3,
+    "candidates": [],
+    "hiringManager": {
+      "id": "",
+      "name": "Roseanne Park"
+    }
   },
   {
     "title": "Software Developer-4",
     "companyName": "Google",
-    "companyDesc": "",
+    "companyDesc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry",
     "jobType": "Remote",
     "jobDesc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-    "jobField": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+    "jobField": "engineering",
     "jobLocation": "Toronto",
     "skills": "Node, Mongo, Express, React",
     "startDate": "Immediately",
     "salary": "50000",
-    "unit": "USD"
-  },
-  {
-    "title": "Software Developer-5",
-    "companyName": "Google",
-    "companyDesc": "",
-    "jobType": "Remote",
-    "jobDesc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-    "jobField": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-    "jobLocation": "Toronto",
-    "skills": "Node, Mongo, Express, React",
-    "startDate": "Immediately",
-    "salary": "50000",
-    "unit": "USD"
+    "unit": "USD",
+    "deadline": "10 Nov 22",
+    "vacancy": 3,
+    "candidates": [],
+    "hiringManager": {
+      "id": "",
+      "name": "Kim Jisoo"
+    }
   }
 ]

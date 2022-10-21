@@ -1,8 +1,11 @@
 [
   {
     "name": "",
+    "contactNumber": "",
+    "email": "",
     "companyName": "",
     "appliedJobs": [],
+    "postedJobs": [],
     "role": "candidate"
   }
 ]
