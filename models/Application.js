@@ -22,15 +22,6 @@ const applicationSchema = mongoose.Schema(
       trim: true,
       required: [true, "Please provide your name"],
     },
-
-    candidateEmail: {
-      type: String,
-      required: [true, "Please provide an email"],
-      validate: [validator.isEmail, "Please provide a valid email"],
-      trim: true,
-      lowercase: true,
-      unique: true,
-    },
   },
   {
     timestamps: true,
