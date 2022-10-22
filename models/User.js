@@ -1,5 +1,6 @@
 const mongoose = require("mongoose");
 const validator = require("validator");
+const { ObjectId } = mongoose.Schema.Types;
 
 const userSchema = mongoose.Schema({
   email: {
@@ -38,18 +39,22 @@ const userSchema = mongoose.Schema({
     },
   },
 
-  role: {
-    type: String,
-    enum: ["candidate", "hiring-manager", "admin"],
-    default: "candidate",
-  },
-
   name: {
     type: String,
     required: [true, "Please provide a first name"],
     trim: true,
     minLength: [3, "Name must be at least 3 characters."],
     maxLength: [100, "Name is too large"],
+  },
+
+  companyName: String,
+
+  companyDesc: String,
+
+  role: {
+    type: String,
+    enum: ["candidate", "hiring-manager", "admin"],
+    default: "candidate",
   },
 
   contactNumber: {
@@ -60,10 +65,38 @@ const userSchema = mongoose.Schema({
     ],
   },
 
+  presentAddress: String,
+
+  permanentAddress: String,
+
+  location: {
+    type: String,
+    required: [true, "Please provide your location"],
+  },
+
   imageURL: {
     type: String,
     validate: [validator.isURL, "Please provide a valid url"],
   },
+
+  nationalIdImageURL: {
+    type: String,
+    validate: [validator.isURL, "Please provide a valid url"],
+  },
+
+  jobsApplied: [
+    {
+      type: ObjectId,
+      ref: "Job",
+    },
+  ],
+
+  jobsPosted: [
+    {
+      type: ObjectId,
+      ref: "Job",
+    },
+  ],
 
   passwordChangedAt: Date,
   passwordResetToken: String,
