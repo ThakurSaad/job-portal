@@ -68,6 +68,25 @@ exports.getJobById = async (req, res) => {
 
 exports.applyJob = async (req, res) => {
   try {
+    const { id } = req.params;
+
+    const jobFound = await getJobByIdService(id);
+
+    if (!jobFound) {
+      return res.status(400).json({
+        status: "Fail",
+        message: "Job not found for this id",
+      });
+    }
+
+    // preventing edge case when job-id on database and job-id on query/body does not match
+    if (jobFound.id != req.body.job.id) {
+      return res.status(400).json({
+        status: "Fail",
+        message: "job-id on param and job-id on req does not match",
+      });
+    }
+
     const job = await applyJobService(req.body);
 
     res.status(200).json({
@@ -76,7 +95,7 @@ exports.applyJob = async (req, res) => {
       data: job,
     });
   } catch (error) {
-    console.log("error");
+    console.log(error);
 
     res.status(400).json({
       status: "Fail",
