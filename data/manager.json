@@ -1,0 +1,15 @@
+[
+  {
+    "name": "Lalisa Manoban",
+    "email": "Lalisa.YG@test.com",
+    "companyName": "YG",
+    "companyDesc": "lorem Ipsum is simply dummy text of the printing and typesetting industry",
+    "contactNumber": "+8801505050505",
+    "emergencyContactNumber": "+8801505050505",
+    "presentAddress": "944 Honduras Street",
+    "permanentAddress": "944 Ghana Street",
+    "location": "seoul",
+    "imageURL": "https://i.ibb.co/WnFSs9Y/unnamed.webp",
+    "nationalIdImageURL": "https://i.ibb.co/WnFSs9Y/unnamed.webp"
+  }
+]

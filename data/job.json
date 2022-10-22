@@ -11,12 +11,13 @@
     "startDate": "immediately",
     "salary": "50000",
     "unit": "USD",
-    "deadline": "10 Nov 22",
+    "deadline": "10/10/2022",
     "vacancy": 5,
     "candidates": [],
     "hiringManager": {
-      "id": "",
-      "name": "Lalisa Manoban"
+      "id": "6339974336bfc72a86185f4d",
+      "name": "Lalisa Manoban",
+      "contactNumber": "+8801505050505"
     }
   },
   {
@@ -31,12 +32,13 @@
     "startDate": "immediately",
     "salary": "60000",
     "unit": "USD",
-    "deadline": "10 Nov 22",
+    "deadline": "10/10/2022",
     "vacancy": 3,
     "candidates": [],
     "hiringManager": {
-      "id": "",
-      "name": "Lalisa Manoban"
+      "id": "6339974336bfc72a86185f4d",
+      "name": "Lalisa Manoban",
+      "contactNumber": "+8801505050505"
     }
   },
   {
@@ -51,12 +53,13 @@
     "startDate": "immediately",
     "salary": "70000",
     "unit": "USD",
-    "deadline": "10 Nov 22",
+    "deadline": "10/10/2022",
     "vacancy": 2,
     "candidates": [],
     "hiringManager": {
-      "id": "",
-      "name": "Jenny Ruby Jane"
+      "id": "6339974336bfc72a86185f4d",
+      "name": "Jenny Ruby Jane",
+      "contactNumber": "+8801505050505"
     }
   },
   {
@@ -71,12 +74,13 @@
     "startDate": "immediately",
     "salary": "80000",
     "unit": "USD",
-    "deadline": "10 Nov 22",
+    "deadline": "10/10/2022",
     "vacancy": 1,
     "candidates": [],
     "hiringManager": {
-      "id": "",
-      "name": "Jenny Ruby Jane"
+      "id": "6339974336bfc72a86185f4d",
+      "name": "Jenny Ruby Jane",
+      "contactNumber": "+8801505050505"
     }
   },
   {
@@ -91,17 +95,18 @@
     "startDate": "immediately",
     "salary": "90000",
     "unit": "USD",
-    "deadline": "10 Nov 22",
+    "deadline": "10/10/2022",
     "vacancy": 1,
     "candidates": [],
     "hiringManager": {
-      "id": "",
-      "name": "Roseanne Park"
+      "id": "6339974336bfc72a86185f4d",
+      "name": "Roseanne Park",
+      "contactNumber": "+8801505050505"
     }
   },
   {
     "title": "software Developer-6",
-    "companyName": "google",
+    "companyName": "YG",
     "companyDesc": "lorem Ipsum is simply dummy text of the printing and typesetting industry",
     "jobType": "remote",
     "jobDesc": "lorem Ipsum is simply dummy text of the printing and typesetting industry.",
@@ -111,12 +116,13 @@
     "startDate": "immediately",
     "salary": "50000",
     "unit": "USD",
-    "deadline": "10 Nov 22",
+    "deadline": "10/10/2022",
     "vacancy": 2,
     "candidates": [],
     "hiringManager": {
-      "id": "",
-      "name": "Roseanne Park"
+      "id": "6339974336bfc72a86185f4d",
+      "name": "Roseanne Park",
+      "contactNumber": "+8801505050505"
     }
   },
   {
@@ -131,12 +137,13 @@
     "startDate": "immediately",
     "salary": "50000",
     "unit": "USD",
-    "deadline": "10 Nov 22",
+    "deadline": "10/10/2022",
     "vacancy": 3,
     "candidates": [],
     "hiringManager": {
-      "id": "",
-      "name": "Kim Jisoo"
+      "id": "6339974336bfc72a86185f4d",
+      "name": "Kim Jisoo",
+      "contactNumber": "+8801505050505"
     }
   },
   {
@@ -151,12 +158,13 @@
     "startDate": "immediately",
     "salary": "50000",
     "unit": "USD",
-    "deadline": "10 Nov 22",
+    "deadline": "10/10/2022",
     "vacancy": 3,
     "candidates": [],
     "hiringManager": {
-      "id": "",
-      "name": "Kim Jisoo"
+      "id": "6339974336bfc72a86185f4d",
+      "name": "Kim Jisoo",
+      "contactNumber": "+8801505050505"
     }
   }
 ]

@@ -112,16 +112,20 @@ const jobSchema = mongoose.Schema(
       },
     ],
 
-    hiringManager: [
-      {
-        name: String,
-        contactNumber: String,
-        id: {
-          type: ObjectId,
-          ref: "User",
-        },
+    hiringManager: {
+      name: {
+        type: String,
+        required: true,
       },
-    ],
+      contactNumber: {
+        type: String,
+        required: true,
+      },
+      id: {
+        type: ObjectId,
+        ref: "User",
+      },
+    },
   },
   {
     timestamps: true,

@@ -8,8 +8,10 @@ app.use(cors());
 
 //routes
 const candidateRoute = require("./routes/candidate.route");
+const managerRoute = require("./routes/manager.route");
 
 app.use("/api/v1/candidate/jobs", candidateRoute);
+app.use("/api/v1/manager/jobs", managerRoute);
 
 app.get("/", (req, res) => {
   res.send("Route is high");
