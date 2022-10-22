@@ -105,7 +105,7 @@ const jobSchema = mongoose.Schema(
       required: [true, "Please provide number of vacancies"],
     },
 
-    candidates: [
+    candidatesId: [
       {
         type: ObjectId,
         ref: "User",

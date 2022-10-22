@@ -2,34 +2,40 @@ const mongoose = require("mongoose");
 const { ObjectId } = mongoose.Schema.Types;
 const validator = require("validator");
 
-const applicationSchema = mongoose.Schema({
-  candidateName: {
-    type: String,
-    lowerCase: true,
-    trim: true,
-    required: [true, "Please provide your name"],
-  },
+const applicationSchema = mongoose.Schema(
+  {
+    job: {
+      title: {
+        type: String,
+        required: true,
+      },
+      id: {
+        type: ObjectId,
+        required: true,
+        ref: "Job",
+      },
+    },
 
-  candidateEmail: {
-    type: String,
-    required: [true, "Please provide an email"],
-    validate: [validator.isEmail, "Please provide a valid email"],
-    trim: true,
-    lowercase: true,
-    unique: true,
-  },
+    candidateName: {
+      type: String,
+      lowerCase: true,
+      trim: true,
+      required: [true, "Please provide your name"],
+    },
 
-  jobTitle: {
-    type: String,
-    trim: true,
-    required: true,
+    candidateEmail: {
+      type: String,
+      required: [true, "Please provide an email"],
+      validate: [validator.isEmail, "Please provide a valid email"],
+      trim: true,
+      lowercase: true,
+      unique: true,
+    },
   },
-
-  jobId: {
-    type: String,
-    required: true,
-  },
-});
+  {
+    timestamps: true,
+  }
+);
 
 const Application = mongoose.model("Application", applicationSchema);
 

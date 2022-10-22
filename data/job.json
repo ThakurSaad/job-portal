@@ -13,7 +13,7 @@
     "unit": "USD",
     "deadline": "10/10/2022",
     "vacancy": 5,
-    "candidates": [],
+    "candidatesId": [],
     "hiringManager": {
       "id": "6339974336bfc72a86185f4d",
       "name": "Lalisa Manoban",
@@ -34,7 +34,7 @@
     "unit": "USD",
     "deadline": "10/10/2022",
     "vacancy": 3,
-    "candidates": [],
+    "candidatesId": [],
     "hiringManager": {
       "id": "6339974336bfc72a86185f4d",
       "name": "Lalisa Manoban",
@@ -55,7 +55,7 @@
     "unit": "USD",
     "deadline": "10/10/2022",
     "vacancy": 2,
-    "candidates": [],
+    "candidatesId": [],
     "hiringManager": {
       "id": "6339974336bfc72a86185f4d",
       "name": "Jenny Ruby Jane",
@@ -76,7 +76,7 @@
     "unit": "USD",
     "deadline": "10/10/2022",
     "vacancy": 1,
-    "candidates": [],
+    "candidatesId": [],
     "hiringManager": {
       "id": "6339974336bfc72a86185f4d",
       "name": "Jenny Ruby Jane",
@@ -97,7 +97,7 @@
     "unit": "USD",
     "deadline": "10/10/2022",
     "vacancy": 1,
-    "candidates": [],
+    "candidatesId": [],
     "hiringManager": {
       "id": "6339974336bfc72a86185f4d",
       "name": "Roseanne Park",
@@ -118,7 +118,7 @@
     "unit": "USD",
     "deadline": "10/10/2022",
     "vacancy": 2,
-    "candidates": [],
+    "candidatesId": [],
     "hiringManager": {
       "id": "6339974336bfc72a86185f4d",
       "name": "Roseanne Park",
@@ -139,7 +139,7 @@
     "unit": "USD",
     "deadline": "10/10/2022",
     "vacancy": 3,
-    "candidates": [],
+    "candidatesId": [],
     "hiringManager": {
       "id": "6339974336bfc72a86185f4d",
       "name": "Kim Jisoo",
@@ -160,7 +160,7 @@
     "unit": "USD",
     "deadline": "10/10/2022",
     "vacancy": 3,
-    "candidates": [],
+    "candidatesId": [],
     "hiringManager": {
       "id": "6339974336bfc72a86185f4d",
       "name": "Kim Jisoo",

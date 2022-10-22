@@ -1,8 +1,10 @@
 [
   {
-    "candidateName": "Alex Tim",
-    "candidateEmail": "alex@tim.com",
-    "jobTitle": "software Developer-1",
-    "jobId": "635241dd5aaf9137f08540aa"
+    "candidateName": "Thakur-saad",
+    "candidateEmail": "thakur.YG@test.com",
+    "job": {
+      "id": "6353881ea7c20e3fdea81849",
+      "title": "software Developer-1"
+    }
   }
 ]
