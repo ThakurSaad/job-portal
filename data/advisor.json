@@ -1,0 +1,15 @@
+{
+  "name": "Huge Jackman",
+  "email": "admin@gmail.com",
+  "password": "Admin123#",
+  "confirmPassword": "Admin123#",
+  "companyName": "Marvel",
+  "companyDesc": "lorem Ipsum is simply dummy text of the printing and typesetting industry",
+  "role": "advisor",
+  "contactNumber": "+8801505050505",
+  "presentAddress": "944 Honduras Street",
+  "permanentAddress": "944 Ghana Street",
+  "location": "America",
+  "imageURL": "https://i.ibb.co/WnFSs9Y/unnamed.webp",
+  "nationalIdImageURL": "https://i.ibb.co/WnFSs9Y/unnamed.webp"
+}
