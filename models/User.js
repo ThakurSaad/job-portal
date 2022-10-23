@@ -55,16 +55,18 @@ const userSchema = mongoose.Schema(
     role: {
       type: String,
       required: true,
-      enum: ["candidate", "hiring-manager", "admin"],
+      enum: ["candidate", "hiring-manager", "admin", "advisor"],
       default: "candidate",
     },
 
     contactNumber: {
       type: String,
-      validate: [
-        validator.isMobilePhone,
-        "Please provide a valid contact number",
-      ],
+      validate: {
+        validator: (value) => {
+          return validator.isMobilePhone(value);
+        },
+        message: "Please provide a valid contact number",
+      },
     },
 
     presentAddress: String,
@@ -74,6 +76,7 @@ const userSchema = mongoose.Schema(
     location: {
       type: String,
       required: [true, "Please provide your location"],
+      lowercase: true,
     },
 
     imageURL: {
