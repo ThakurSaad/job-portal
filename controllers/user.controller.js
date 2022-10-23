@@ -70,3 +70,18 @@ exports.login = async (req, res, next) => {
     });
   }
 };
+
+exports.getMe = async (req, res, next) => {
+  try {
+    res.status(200).json({
+      status: "Success",
+      message: "User found",
+      // data: user,
+    });
+  } catch (error) {
+    res.status(500).json({
+      status: "Fail",
+      error: error.message,
+    });
+  }
+};
