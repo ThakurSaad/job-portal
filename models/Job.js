@@ -1,5 +1,6 @@
 const mongoose = require("mongoose");
 const { ObjectId } = mongoose.Schema.Types;
+const validator = require("validator");
 
 const jobSchema = mongoose.Schema(
   {
@@ -55,6 +56,7 @@ const jobSchema = mongoose.Schema(
     jobLocation: {
       type: String,
       required: [true, "Please provide a job location"],
+      lowercase: true,
     },
 
     skills: {
@@ -105,7 +107,7 @@ const jobSchema = mongoose.Schema(
       required: [true, "Please provide number of vacancies"],
     },
 
-    candidatesId: [
+    candidates: [
       {
         type: ObjectId,
         ref: "Application",
@@ -117,9 +119,10 @@ const jobSchema = mongoose.Schema(
         type: String,
         required: true,
       },
-      contactNumber: {
+      email: {
         type: String,
         required: true,
+        validate: [validator.isEmail, "Provide a valid Email"],
       },
       id: {
         type: ObjectId,

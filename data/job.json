@@ -17,7 +17,7 @@
     "hiringManager": {
       "id": "6354ef802caf7cd8e04a7dcf",
       "name": "Lalisa Manoban",
-      "contactNumber": "+8801505050505"
+      "email": "lalisa.YG@test.com"
     }
   },
   {
@@ -38,7 +38,7 @@
     "hiringManager": {
       "id": "6354ef802caf7cd8e04a7dcf",
       "name": "Lalisa Manoban",
-      "contactNumber": "+8801505050505"
+      "email": "lalisa.YG@test.com"
     }
   },
   {
@@ -59,7 +59,7 @@
     "hiringManager": {
       "id": "6354ef802caf7cd8e04a7dd0",
       "name": "Jenny Ruby Jane",
-      "contactNumber": "+8801505050505"
+      "email": "jenny.YG@test.com"
     }
   },
   {
@@ -80,7 +80,7 @@
     "hiringManager": {
       "id": "6354ef802caf7cd8e04a7dd0",
       "name": "Jenny Ruby Jane",
-      "contactNumber": "+8801505050505"
+      "email": "jenny.YG@test.com"
     }
   },
   {
@@ -101,7 +101,7 @@
     "hiringManager": {
       "id": "6354ef802caf7cd8e04a7dd1",
       "name": "Roseanne Park",
-      "contactNumber": "+8801505050505"
+      "email": "rose.YG@test.com"
     }
   },
   {
@@ -122,7 +122,7 @@
     "hiringManager": {
       "id": "6354ef802caf7cd8e04a7dd1",
       "name": "Roseanne Park",
-      "contactNumber": "+8801505050505"
+      "email": "rose.YG@test.com"
     }
   },
   {
@@ -143,7 +143,7 @@
     "hiringManager": {
       "id": "6354ef802caf7cd8e04a7dd2",
       "name": "Kim Jisoo",
-      "contactNumber": "+8801505050505"
+      "email": "jisoo.YG@test.com"
     }
   },
   {
@@ -164,7 +164,7 @@
     "hiringManager": {
       "id": "6354ef802caf7cd8e04a7dd2",
       "name": "Kim Jisoo",
-      "contactNumber": "+8801505050505"
+      "email": "jisoo.YG@test.com"
     }
   }
 ]
