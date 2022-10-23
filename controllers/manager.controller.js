@@ -26,9 +26,8 @@ exports.createJob = async (req, res) => {
 
 exports.getJobs = async (req, res, next) => {
   try {
-    const { id } = req.query;
-    console.log(req.user);
-    const jobs = await getJobsService(id);
+    // get decoded logged in userInfo from verifyToken
+    const jobs = await getJobsService(req?.user);
 
     res.status(200).json({
       status: "Success",
