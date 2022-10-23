@@ -4,6 +4,51 @@ const validator = require("validator");
 
 const applicationSchema = mongoose.Schema(
   {
+    candidateName: {
+      type: String,
+      trim: true,
+      required: [true, "Please provide your name"],
+    },
+
+    candidateEmail: {
+      type: String,
+      trim: true,
+      validate: [validator.isEmail, "Please provide a valid email"],
+      required: [true, "Please provide an email"],
+    },
+
+    jobId: {
+      type: String,
+      required: true,
+    },
+
+    contactNumber: {
+      type: String,
+      required: [true, "Please provide your contact number"],
+      validate: {
+        validator: (value) => {
+          return validator.isMobilePhone(value);
+        },
+        message: "Please provide a valid contact number",
+      },
+    },
+
+    presentAddress: {
+      type: String,
+      required: [true, "Please provide present address"],
+    },
+
+    permanentAddress: {
+      type: String,
+      required: [true, "Please provide permanent address"],
+    },
+
+    location: {
+      type: String,
+      required: [true, "Please provide your location"],
+      lowercase: true,
+    },
+
     job: {
       title: {
         type: String,
@@ -14,25 +59,6 @@ const applicationSchema = mongoose.Schema(
         required: true,
         ref: "Job",
       },
-    },
-
-    jobId: {
-      type: String,
-      required: true,
-    },
-
-    candidateName: {
-      type: String,
-      lowerCase: true,
-      trim: true,
-      required: [true, "Please provide your name"],
-    },
-
-    candidateEmail: {
-      type: String,
-      trim: true,
-      validate: [validator.isEmail, "Please provide a valid email"],
-      required: [true, "Please provide an email"],
     },
   },
   {

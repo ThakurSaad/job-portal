@@ -3,19 +3,23 @@
     "candidateName": "Thakur-saad",
     "candidateEmail": "thakur.YG@test.com",
     "jobId": "6354f0f2d998dc31e10214e3",
+    "contactNumber": "+8801505050505",
+    "presentAddress": "944 Honduras Street",
+    "permanentAddress": "944 Ghana Street",
+    "location": "seoul",
     "job": {
       "title": "software Developer-1",
       "id": "6354f0f2d998dc31e10214e3"
-    },
-    "user": {
-      "name": "",
-      "id": ""
     }
   },
   {
     "candidateName": "Thakur-saad-2",
     "candidateEmail": "thakur.YG2@test.com",
     "jobId": "6354f0f2d998dc31e10214e3",
+    "contactNumber": "+8801505050505",
+    "presentAddress": "944 Honduras Street",
+    "permanentAddress": "944 Ghana Street",
+    "location": "seoul",
     "job": {
       "title": "software Developer-1",
       "id": "6354f0f2d998dc31e10214e3"
@@ -25,6 +29,10 @@
     "candidateName": "Thakur-saad-3",
     "candidateEmail": "thakur.YG3@test.com",
     "jobId": "6354f0f2d998dc31e10214e3",
+    "contactNumber": "+8801505050505",
+    "presentAddress": "944 Honduras Street",
+    "permanentAddress": "944 Ghana Street",
+    "location": "seoul",
     "job": {
       "title": "software Developer-1",
       "id": "6354f0f2d998dc31e10214e3"
@@ -34,6 +42,10 @@
     "candidateName": "Thakur-saad-4",
     "candidateEmail": "thakur.YG4@test.com",
     "jobId": "6354f0f2d998dc31e10214e3",
+    "contactNumber": "+8801505050505",
+    "presentAddress": "944 Honduras Street",
+    "permanentAddress": "944 Ghana Street",
+    "location": "seoul",
     "job": {
       "title": "software Developer-1",
       "id": "6354f0f2d998dc31e10214e3"
