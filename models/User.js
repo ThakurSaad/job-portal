@@ -1,6 +1,7 @@
 const mongoose = require("mongoose");
 const validator = require("validator");
 const { ObjectId } = mongoose.Schema.Types;
+const bcrypt = require("bcrypt");
 
 const userSchema = mongoose.Schema(
   {
@@ -8,7 +9,6 @@ const userSchema = mongoose.Schema(
       type: String,
       validate: [validator.isEmail, "Provide a valid Email"],
       trim: true,
-      lowercase: true,
       unique: true,
       required: [true, "Email address is required"],
     },
