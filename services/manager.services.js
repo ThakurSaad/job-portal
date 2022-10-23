@@ -11,6 +11,6 @@ exports.getJobsService = async (managerId) => {
 };
 
 exports.getJobByIdService = async (jobId) => {
-  const job = await Job.findOne({ _id: jobId });
+  const job = await Job.findOne({ _id: jobId }).populate("candidatesId");
   return job;
 };
