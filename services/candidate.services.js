@@ -12,5 +12,19 @@ exports.getJobByIdService = async (jobId) => {
 };
 
 exports.applyJobService = async (data) => {
-  return await Application.create(data);
+  const foundApplication = await Application.findOne({
+    candidateEmail: data.candidateEmail,
+    jobId: data.jobId,
+  });
+
+  // prevent if applied jobId from client, matches with jobId from DB
+  if (foundApplication && foundApplication?.jobId == data.jobId) {
+    return null;
+  } else {
+    return await Application.create(data);
+  }
 };
+
+// 4 635397099cea29fc03185303
+// 1 635397099cea29fc03185300
+// 2 635397099cea29fc03185301

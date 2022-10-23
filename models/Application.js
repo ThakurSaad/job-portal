@@ -16,6 +16,11 @@ const applicationSchema = mongoose.Schema(
       },
     },
 
+    jobId: {
+      type: String,
+      required: true,
+    },
+
     candidateName: {
       type: String,
       lowerCase: true,

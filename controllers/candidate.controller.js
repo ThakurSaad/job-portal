@@ -87,7 +87,15 @@ exports.applyJob = async (req, res) => {
       });
     }
 
+    // prevent second time apply
     const job = await applyJobService(req.body);
+
+    if (!job) {
+      return res.status(400).json({
+        status: "Fail",
+        message: "Already applied",
+      });
+    }
 
     res.status(200).json({
       status: "Success",
