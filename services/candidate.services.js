@@ -21,7 +21,17 @@ exports.applyJobService = async (data) => {
   if (foundApplication && foundApplication?.jobId == data.jobId) {
     return null;
   } else {
-    return await Application.create(data);
+    const application = await Application.create(data);
+
+    const { _id: jobId, job } = application;
+
+    const result = await Job.updateOne(
+      { _id: job.id },
+      { $push: { candidatesId: jobId } }
+    );
+    console.log(result);
+
+    return application;
   }
 };
 

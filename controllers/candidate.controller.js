@@ -88,9 +88,9 @@ exports.applyJob = async (req, res) => {
     }
 
     // prevent second time apply
-    const job = await applyJobService(req.body);
+    const application = await applyJobService(req.body);
 
-    if (!job) {
+    if (!application) {
       return res.status(400).json({
         status: "Fail",
         message: "Already applied",
@@ -100,7 +100,7 @@ exports.applyJob = async (req, res) => {
     res.status(200).json({
       status: "Success",
       message: "Application successful",
-      data: job,
+      data: application,
     });
   } catch (error) {
     console.log(error);

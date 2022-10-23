@@ -9,3 +9,8 @@ exports.getJobsService = async (managerId) => {
   const total = await Job.countDocuments({ "hiringManager.id": managerId });
   return { total, jobs };
 };
+
+exports.getJobByIdService = async (jobId) => {
+  const job = await Job.findOne({ _id: jobId });
+  return job;
+};

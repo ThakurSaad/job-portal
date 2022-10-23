@@ -2,10 +2,11 @@ const express = require("express");
 const router = express.Router();
 const managerController = require("../controllers/manager.controller");
 
-router.post("/", managerController.createJob);
+router
+  .route("/")
+  .post(managerController.createJob)
+  .get(managerController.getJobs);
 
-router.get("/", managerController.getJobs);
-
-// router.get("/:id", managerController.getJobById);
+router.get("/:id", managerController.getJobById);
 
 module.exports = router;
