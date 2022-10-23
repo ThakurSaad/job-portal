@@ -4,7 +4,7 @@ const managerController = require("../controllers/manager.controller");
 
 router.post("/", managerController.createJob);
 
-// router.get("/", managerController.getJobs);
+router.get("/", managerController.getJobs);
 
 // router.get("/:id", managerController.getJobById);
 
