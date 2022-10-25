@@ -8,7 +8,8 @@ exports.getJobsService = async (filters, queries) => {
 };
 
 exports.getJobByIdService = async (jobId) => {
-  return await Job.findOne({ _id: jobId });
+  const job = await Job.findOne({ _id: jobId }).populate("hiringManager.id");
+  return job;
 };
 
 exports.applyJobService = async (data) => {
@@ -30,7 +31,3 @@ exports.applyJobService = async (data) => {
     return application;
   }
 };
-
-// 4 635397099cea29fc03185303
-// 1 635397099cea29fc03185300
-// 2 635397099cea29fc03185301
