@@ -5,7 +5,7 @@ const { verifyToken } = require("../middlewares/verifyToken");
 
 router.post("/jobs", managerController.createJob);
 
-// router.patch("/jobs/:id", managerController.updateJobById);
+router.patch("/jobs/:id", managerController.updateJobById);
 
 router.get("/manager/jobs", verifyToken, managerController.getJobs);
 
