@@ -10,6 +10,8 @@ I struggled the most when designing the database. I lost count of how many times
 
 ### Project Details / Api Documentation
 
+[Go to project summary](https://github.com/ThakurSaad/job-portal#project-summary)
+
 - Base vercel url: `job-portal-taupe.vercel.app`.
 - `req.body` is validated before through Schema.
 
@@ -54,7 +56,7 @@ This route is protected via JWT. You need accessToken to get to this route.
    - for user persistence.
    - get user information from token.
 
-### Project Overview
+### Project Summary
 
 - Developed routes based on user-role. Candidate, Hiring-manager, Admin, Advisor.
 - Implemented authentication with JWT.
