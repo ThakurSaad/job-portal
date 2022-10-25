@@ -16,6 +16,7 @@ I struggled the most when designing the database 🙇 I lost count of how many t
 
 - Base vercel url: `job-portal-taupe.vercel.app`.
 - `req.body` is validated before through Schema.
+- some [mock data](https://github.com/ThakurSaad/job-portal/tree/main/data) are given about user (manager/candidate/admin), job & application.
 
 #### Auth Routes
 
