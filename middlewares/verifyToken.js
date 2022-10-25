@@ -24,6 +24,7 @@ exports.verifyToken = async (req, res, next) => {
     res.status(403).json({
       status: "Fail",
       error: "Invalid token",
+      error: error.message,
     });
   }
 };
