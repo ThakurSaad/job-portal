@@ -1,12 +1,14 @@
 # Job Portal
 
-[Live Server](https://job-portal-taupe.vercel.app/)
+**Development Ongoing** 🛠️🪛
 
-I have tried to build the backend of a **Job Portal** in this project. I used **MVC** to structure my code. With this project I tried to dive deep into the backend.
+[Live Server](https://job-portal-taupe.vercel.app/) ☁️
+
+I have tried to build the backend of a **Job Portal** in this project 🙎 I used **MVC** to structure my code. With this project I tried to dive deep into the backend 🌊🏊
 
 ### Interesting Experience
 
-I struggled the most when designing the database. I lost count of how many times I had to change the **Schema** to make queries efficient. Especially, where to keep `ref` and where to `populate`. But it was also the most interesting part. Now I understand why database design is crucial when building an application.
+I struggled the most when designing the database 🙇 I lost count of how many times I had to change the **Schema** to make queries efficient 🤦 Especially, where to keep `ref` and where to `populate`. But it was also the most interesting part 😃 Now I understand why database design is crucial when building an application 💁
 
 ### Project Details / Api Documentation
 
