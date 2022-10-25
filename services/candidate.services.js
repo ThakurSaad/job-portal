@@ -25,7 +25,7 @@ exports.applyJobService = async (data) => {
 
     const { _id: jobId, job } = application;
 
-    await Job.updateOne({ _id: job.id }, { $push: { candidatesId: jobId } });
+    await Job.updateOne({ _id: job.id }, { $push: { candidates: jobId } });
 
     return application;
   }
