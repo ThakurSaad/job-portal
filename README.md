@@ -18,8 +18,22 @@ I struggled the most when designing the database. I lost count of how many times
 This route is protected via JWT. You need accessToken to get to this route.
 
 1. `POST/{{VERCEL}}/jobs`
-   Hiring manager can post jobs in this route.
-2. 
+   - Hiring manager can post jobs in this route.
+2. `GET/{{VERCEL}}/manager/jobs`
+   - verifyToken
+   - Get manager `id` from token
+   - Load job of this manager
+
+#### Auth Routes
+
+1. `POST/{{VERCEL}}/user/signup`
+   - user signs up with all user details.
+   - can't sign up if password != confirmPassword.
+   - password is **hashed** by `bcrypt` then saved in the DB.
+2. `POST/{{VERCEL}}/user/login`
+   - user login with email and password.
+   - password is checked with the **hashed** password from DB.
+   - send `accessToken` upon successful login
 
 ### Project Overview
 
