@@ -15,6 +15,20 @@ I struggled the most when designing the database. I lost count of how many times
 - Base vercel url: `job-portal-taupe.vercel.app`.
 - `req.body` is validated before through Schema.
 
+#### Auth Routes
+
+1. `POST/{{VERCEL}}/user/signup`
+   - user signs up with all user details.
+   - can't sign up if password != confirmPassword.
+   - password is **hashed** by `bcrypt` then saved in the DB.
+2. `POST/{{VERCEL}}/user/login`
+   - user login with email and password.
+   - password is checked with the **hashed** password from DB.
+   - send `accessToken` upon successful login
+3. `GET/{{VERCEL}}/user/me`
+   - for user persistence.
+   - get user information from token.
+
 #### Hiring Manager Routes
 
 This route is protected via JWT. You need accessToken to get to this route.
@@ -41,20 +55,6 @@ This route is protected via JWT. You need accessToken to get to this route.
 3. `POST/{{VERCEL}}/jobs/:id/apply`
    - apply for a job
    - can't apply if already applied
-
-#### Auth Routes
-
-1. `POST/{{VERCEL}}/user/signup`
-   - user signs up with all user details.
-   - can't sign up if password != confirmPassword.
-   - password is **hashed** by `bcrypt` then saved in the DB.
-2. `POST/{{VERCEL}}/user/login`
-   - user login with email and password.
-   - password is checked with the **hashed** password from DB.
-   - send `accessToken` upon successful login
-3. `GET/{{VERCEL}}/user/me`
-   - for user persistence.
-   - get user information from token.
 
 ### Project Summary
 
