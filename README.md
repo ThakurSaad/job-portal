@@ -10,6 +10,17 @@ I struggled the most when designing the database. I lost count of how many times
 
 ### Project Details
 
+- Base vercel url: `job-portal-taupe.vercel.app`.
+- `req.body` is validated before through Schema.
+
+#### Hiring Manager Routes
+
+This route is protected via JWT. You need accessToken to get to this route.
+
+1. `POST/{{VERCEL}}/jobs`
+   Hiring manager can post jobs in this route.
+2. 
+
 ### Project Overview
 
 - Developed routes based on user-role. Candidate, Hiring-manager, Admin, Advisor.
