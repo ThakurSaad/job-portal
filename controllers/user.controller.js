@@ -42,7 +42,7 @@ exports.login = async (req, res, next) => {
       });
     }
 
-    const isPasswordValid = password == user.password;
+    const isPasswordValid = user.comparePassword(password, user.password);
 
     if (!isPasswordValid) {
       return res.status(403).json({
@@ -53,7 +53,7 @@ exports.login = async (req, res, next) => {
 
     const token = generateToken(user);
 
-    const { password: pwd, confirmPassword, ...others } = user.toObject();
+    const { password: pwd, ...others } = user.toObject();
 
     res.status(200).json({
       status: "Success",

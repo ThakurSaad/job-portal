@@ -110,6 +110,24 @@ const userSchema = mongoose.Schema(
   { timestamps: true }
 );
 
+userSchema.pre("save", function (next) {
+  const password = this.password;
+  const saltRounds = 10;
+
+  const salt = bcrypt.genSaltSync(saltRounds);
+  const hashedPassword = bcrypt.hashSync(password, salt);
+
+  this.password = hashedPassword;
+  this.confirmPassword = undefined;
+
+  next();
+});
+
+userSchema.methods.comparePassword = function async(password, hash) {
+  const isPasswordValid = bcrypt.compareSync(password, hash);
+  return isPasswordValid;
+};
+
 const User = mongoose.model("User", userSchema);
 
 module.exports = User;

@@ -11,8 +11,8 @@ const candidateRoute = require("./routes/candidate.route");
 const managerRoute = require("./routes/manager.route");
 const userRoute = require("./routes/user.route");
 
-app.use("/api/v1/candidate/jobs", candidateRoute);
-app.use("/api/v1/manager/jobs", managerRoute);
+app.use("/api/v1", candidateRoute);
+app.use("/api/v1", managerRoute);
 app.use("/api/v1/user", userRoute);
 
 app.get("/", (req, res) => {
