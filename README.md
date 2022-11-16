@@ -53,6 +53,7 @@ This route is protected via JWT. You need accessToken to get to this route.
 1. `GET/{{VERCEL}}/jobs`
    - can filter jobs by location, jobType, salary, title, companyName, jobField, startDate, vacancy, etc.
    - sort jobs by location, vacancy, etc.
+   - demo with sort and filter `{{VERCEL}}/jobs?jobType=remote&salary[lte]=80000`
 2. `GET/{{VERCEL}}/jobs/:id`
    - job details with hiring manager info.
 3. `POST/{{VERCEL}}/jobs/:id/apply`
