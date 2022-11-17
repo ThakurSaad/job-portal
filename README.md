@@ -10,6 +10,10 @@ I have tried to build the backend of a **Job Portal** in this project 🙎 I use
 
 I struggled the most when designing the database 🙇 I lost count of how many times I had to change the **Schema** to make queries efficient 🤦 Especially, where to keep `ref` and where to `populate`. But it was also the most interesting part 😃 Now I understand why database design is crucial when building an application 💁
 
+### Structure Diagram
+
+![Diagram](https://github.com/ThakurSaad/job-portal/blob/main/assets/diagram.png)
+
 ### Project Details / Api Documentation
 
 [Go to project summary](https://github.com/ThakurSaad/job-portal#project-summary)
